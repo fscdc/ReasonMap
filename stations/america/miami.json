@@ -1,0 +1,20 @@
+{
+    "Metrorail Green Line": [
+      "Palmetto Station","Okeechobee Station","Hialeah Station","Tri-Rail Station (Transfer Station)",
+      "Northside Station","Dr. Martin Luther King Jr. Station","Brownsville Station","Earlington Heights Station (Transfer Station)",
+      "Allapattah Station (Transfer Station)","Santa Clara Station (Transfer Station)","Civic Center Station (Transfer Station)",
+      "Culmer Station (Transfer Station)","Historic Overtown/Lyric Theatre Station (Transfer Station)",
+      "Government Center Station (Transfer Station)","Brickell Station (Transfer Station)","Vizcaya Station (Transfer Station)",
+      "Coconut Grove Station (Transfer Station)","Douglas Road Station (Transfer Station)","University Station (Transfer Station)",
+      "South Miami Station (Transfer Station)","Dadeland North Station (Transfer Station)","Dadeland South Station (Transfer Station)"
+    ],
+    "Metrorail Orange Line": [
+      "Miami International Airport Station","Earlington Heights Station (Transfer Station)","Allapattah Station (Transfer Station)",
+      "Santa Clara Station (Transfer Station)","Civic Center Station (Transfer Station)","Culmer Station (Transfer Station)",
+      "Historic Overtown/Lyric Theatre Station (Transfer Station)","Government Center Station (Transfer Station)",
+      "Brickell Station (Transfer Station)","Vizcaya Station (Transfer Station)","Coconut Grove Station (Transfer Station)",
+      "Douglas Road Station (Transfer Station)","University Station (Transfer Station)","South Miami Station (Transfer Station)",
+      "Dadeland North Station (Transfer Station)","Dadeland South Station (Transfer Station)"
+    ]
+  }
+  

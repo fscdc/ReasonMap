@@ -1,0 +1,55 @@
+{
+    "North South Line": [
+      "Jurong East Station (Transfer Station)", "Bukit Batok Station", "Bukit Gombak Station", "Choa Chu Kang Station (Transfer Station)", "Yew Tee Station", "Kranji Station", 
+      "Marsiling Station","Woodlands Station (Transfer Station)", "Admiralty Station", "Sembawang Station", "Canberra Station", "Yishun Station", "Khatib Station", 
+      "Yio Chu Kang Station", "Ang Mo Kio Station", "Bishan Station (Transfer Station)", "Braddell Station", "Toa Payoh Station", "Novena Station", 
+      "Newton Station (Transfer Station)", "Orchard Station (Transfer Station)", "Somerset Station", "Dhoby Ghaut Station (Transfer Station)", 
+      "City Hall Station (Transfer Station)", "Raffles Place Station (Transfer Station)", "Marina Bay Station (Transfer Station)", "Marina South Pier Station"
+    ],
+  
+    "East West Line": [
+      "Tuas Link Station", "Tuas West Road Station", "Tuas Crescent Station", "Gul Circle Station", "Joo Koon Station", "Pioneer Station", "Boon Lay Station", 
+      "Lakeside Station", "Chinese Garden Station", "Jurong East Station (Transfer Station)", "Clementi Station", "Dover Station", "Buona Vista Station (Transfer Station)", 
+      "Commonwealth Station", "Queenstown Station", "Redhill Station", "Tiong Bahru Station", "Outram Park Station (Transfer Station)", "Tanjong Pagar Station", 
+      "Raffles Place Station (Transfer Station)", "City Hall Station (Transfer Station)", "Bugis Station (Transfer Station)", "Lavender Station", "Kallang Station", 
+      "Aljunied Station", "Paya Lebar Station (Transfer Station)", "Eunos Station", "Kembangan Station", "Bedok Station", "Tanah Merah Station", "Simei Station", 
+      "Tampines Station (Transfer Station)", "Pasir Ris Station"
+    ],
+    
+    "North East Line": [
+      "HarbourFront Station (Transfer Station)", "Outram Park Station (Transfer Station)", "Chinatown Station (Transfer Station)", "Clarke Quay Station", 
+      "Dhoby Ghaut Station (Transfer Station)", "Little India Station (Transfer Station)", "Farrer Park Station", "Boon Keng Station", "Potong Pasir Station", 
+      "Woodleigh Station", "Serangoon Station (Transfer Station)", "Kovan Station", "Hougang Station", "Buangkok Station", "Sengkang Station", "Punggol Station", 
+      "Punggol Coast Station"
+    ],
+    
+    "Circle Line": [
+      "HarbourFront Station (Transfer Station)", "Telok Blangah Station", "Labrador Park Station", "Pasir Panjang Station", "Haw Par Villa Station", 
+      "Kent Ridge Station", "One-North Station", "Buona Vista Station (Transfer Station)", "Holland Village Station", "Farrer Road Station", 
+      "Botanic Gardens Station (Transfer Station)", "Caldecott Station (Transfer Station)", "Marymount Station", "Bishan Station (Transfer Station)", 
+      "Lorong Chuan Station", "Serangoon Station (Transfer Station)", "Bartley Station", "Tai Seng Station", "MacPherson Station (Transfer Station)", 
+      "Paya Lebar Station (Transfer Station)", "Dakota Station", "Mountbatten Station", "Stadium Station", "Nicoll Highway Station", 
+      "Promenade Station (Transfer Station) (Branch-starting Station)", "Esplanade Station", "Bras Basah Station", "Dhoby Ghaut Station (Transfer Station)", 
+      "Bayfront Station (Transfer Station)", "Marina Bay Station (Transfer Station)"
+    ],
+    
+    "Downtown Line": [
+      "Bukit Panjang Station (Transfer Station)", "Cashew Station", "Hillview Station", "Hume Station", "Beauty World Station", "King Albert Park Station", 
+      "Sixth Avenue Station", "Tan Kah Kee Station", "Botanic Gardens Station (Transfer Station)", "Stevens Station (Transfer Station)", 
+      "Newton Station (Transfer Station)", "Little India Station (Transfer Station)", "Rochor Station", "Bugis Station (Transfer Station)", 
+      "Promenade Station (Transfer Station)", "Bayfront Station (Transfer Station)", "Downtown Station", "Telok Ayer Station", 
+      "Chinatown Station (Transfer Station)", "Fort Canning Station", "Bencoolen Station", "Jalan Besar Station", "Bendemeer Station", 
+      "Geylang Bahru Station", "Mattar Station", "MacPherson Station (Transfer Station)", "Ubi Station", "Kaki Bukit Station", 
+      "Bedok North Station", "Bedok Reservoir Station", "Tampines West Station", "Tampines Station (Transfer Station)", "Tampines East Station", 
+      "Upper Changi Station", "Expo Station"
+    ],
+    
+    "Thomson East Coast Line": [
+      "Woodlands North Station", "Woodlands Station (Transfer Station)", "Woodlands South Station", "Springleaf Station", "Lentor Station", 
+      "Mayflower Station", "Bright Hill Station", "Upper Thomson Station", "Caldecott Station (Transfer Station)", "Stevens Station (Transfer Station)", 
+      "Napier Station", "Orchard Boulevard Station", "Orchard Station (Transfer Station)", "Great World Station", "Havelock Station", 
+      "Outram Park Station (Transfer Station)", "Maxwell Station", "Shenton Way Station", "Marina Bay Station (Transfer Station)", 
+      "Gardens by the Bay Station", "Tanjong Rhu Station", "Katong Park Station", "Tanjong Katong Station", "Marine Parade Station", 
+      "Marine Terrace Station", "Siglap Station", "Bayshore Station"
+    ]
+}

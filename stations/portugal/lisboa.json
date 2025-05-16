@@ -1,0 +1,25 @@
+{
+  "Azul": [ 
+    "Reboleira Station", "Amadora Este Station", "Alfornelos Station", "Pontinha Station", "Carnide Station", "Colégio Militar/Luz Station", 
+    "Alto dos Moinhos Station", "Laranjeiras Station", "Jardim Zoológico Station", "Praça de Espanha Station", 
+    "S. Sebastião Station (Transfer Station)", "Parque Station", "Marquês de Pombal Station (Transfer Station)", "Avenida Station", "Restauradores Station", 
+    "Baixa-Chiado Station (Transfer Station)", "Terreiro do Paço Station", "Santa Apolónia Station" 
+  ],
+  "Amarela": [ 
+    "Odivelas Station", "Senhor Roubado Station", "Ameixoeira Station", "Lumiar Station", "Quinta das Conchas Station", "Campo Grande Station (Transfer Station)", 
+    "Cidade Universitária Station", "Entre Campos Station", "Campo Pequeno Station", "Saldanha Station (Transfer Station)", "Picoas Station", 
+    "Marquês de Pombal Station (Transfer Station)", "Rato Station" 
+  ],
+  "Verde": [ 
+    "Telheiras Station", "Campo Grande Station (Transfer Station)", "Alvalade Station", "Roma Station", "Areeiro Station", "Alameda Station (Transfer Station)", 
+    "Arroios Station", "Anjos Station", "Intendente Station", "Martim Moniz Station", "Rossio Station", "Baixa-Chiado Station (Transfer Station)", 
+    "Cais do Sodré Station" 
+  ],
+  "Vermelha": [ 
+    "Aeroporto Station", "Encarnação Station", "Moscavide Station", "Oriente Station", "Cabo Ruivo Station", "Olivais Station", "Chelas Station", "Bela Vista Station", 
+    "Olaias Station", "Alameda Station (Transfer Station)", "Saldanha Station (Transfer Station)", "S. Sebastião Station (Transfer Station)" 
+  ]
+}
+
+
+
