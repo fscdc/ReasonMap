@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ReasonMap">
+  <meta name="keywords" content="Visual Reasoning, MLLM, Spatial Reasoning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is Oracle Pruning the True Oracle?</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://github.com/fscdc/Oracle-Pruning-Sanity-Check">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps</h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                    <a href="https://fscdc.github.io/">Sicheng Feng</a><sup>1,2,†</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="">Song Wang</a><sup>3,†</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com.hk/citations?user=pQgChLEAAAAJ&hl=zh-CN">Shuyi Ouyang</a><sup>3</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="https://ldkong.com/">Lingdong Kong</a><sup>4</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="">Zikai Song</a><sup>5</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="https://jkzhu.github.io/">Jianke Zhu</a><sup>3</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="http://huanwang.tech">Huan Wang</a><sup>1,*</sup>&#8192;
+                  </span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/site/sitexinchaowang/">Xinchao Wang</a><sup>4</sup>&#8192;
+                  </span>                  
+            </div>
+            <h1 style="font-size:23px;font-weight:bold">2025</h1>
+
+            <div class="is-size-5 publication-authors">
+                <span><sup>1</sup>Westlake University, Hangzhou, China</span>
+                <span><sup>2</sup>Nankai University, Tianjin, China</span>
+                <span><sup>3</sup>Zhejiang University, Hangzhou, China</span>
+                <span><sup>4</sup>National University of Singapore, Singapore</span>
+                <span><sup>5</sup>Huazhong University of Science and Technology, Wuhan, China</span>                
+            </div>
+
+            <div style="font-size:15px">
+              <span><sup>&ast;</sup>Corresponding author: wanghuan@westlake.edu.cn</span></br></br>
+            </div>
+
+            <div class="columns is-centered">
+              <!-- <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img src="figure/wlu-logo.png" alt="WLU">
+                </figure>
+              </div>
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img src="figure/nku-logo.png" alt="NKU">
+                </figure>
+              </div>
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img src="figure/nku-logo.png" alt="NKU">
+                </figure>
+              </div>
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img src="figure/nku-logo.png" alt="NKU">
+                </figure>
+              </div>    
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img src="figure/nku-logo.png" alt="NKU">
+                </figure>
+              </div>           -->
+            </div>
+
+            <!-- <div class="columns is-centered">
+              <div class="column is-narrow">
+              <figure class="image is-256x128">
+                <img src="figure/logo.jpg" alt="ENCODE Lab" style="width: 384px; height: 96px;">
+              </figure>
+              </div>
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>PDF</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>ArXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/fscdc/ReasonMap"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- dataset Link. -->
+                <span class="link-block">
+                    <a href="https://huggingface.co/datasets/FSCCS/ReasonMap"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="width: 20px; height: 20px;">
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <div class="tldr">
+    TODO
+  </div> -->
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div align='center'>
+          <a><img src=""  height="220" ></a>
+        </div>
+        <div class="content has-text-justified">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+
+          <h2 class="title is-3" align='center'>Correlation Results on MNIST</h2>
+          Pruned train loss <i>vs.</i> final test accuracy on MNIST with LeNet5-Mini. The subcaptions correspond to the pruning rates of each image. The blue star indicates the oracle pruning result (the one with the smallest pruned train loss). The points with final test accuracy higher than the oracle pruning are marked in red (anomaly points), and those lower are marked in green.
+
+          <p align="center">
+            <a><img src="figure/lenet5/conv102_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv104_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv106_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv108_lr2_scatterplot3.svg" width="150" ></a>
+            </br>
+            <a><img src="figure/lenet5/conv202_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv204_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv206_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv208_lr2_scatterplot3.svg" width="150" ></a>
+            </br>
+            <a><img src="figure/lenet5/conv302_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv304_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv306_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv308_lr2_scatterplot3.svg" width="150" ></a>
+            </br>            
+            <a><img src="figure/lenet5/conv10.520.5_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv10.530.5_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv20.530.5_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/lenet5/conv1230.5_lr2_scatterplot3.svg" width="150" ></a>
+            </br>             
+          </p>
+
+          <h2 class="title is-3" align='center'>Correlation Results with VGG19/ResNet56/ResNet18</h2>
+          Pruned train loss <i>vs.</i> final test accuracy with ResNet56 (on CIFAR10), VGG19 (on CIFAR100), and ResNet18 (on ImageNet-1K).
+
+          <p align="center">
+            <a><img src="figure/vgg19/vgg19_conv0.5_lr2_scatterplot3.svg" width="200" ></a>
+            <a><img src="figure/resnet56/resnet56_conv10.5_lr2_scatterplot3.svg" width="200" ></a>
+            <a><img src="figure/resnet18/resnet18_conv10.5_lr2_scatterplot3.svg" width="200" ></a>
+          </p>
+
+          <h2 class="title is-3" align='center'>Correlation Results with MNIST variants</h2>
+          Pruned train loss <i>vs.</i> final test accuracy on the variants of MNIST dataset, with LeNet5-Mini network (pruning ratio 0.5, Conv1 layer). FMNIST and KMNIST are two drop-in replacements of MNIST, which are more complex. As seen, the correlation becomes <i>weaker</i> on <i>more challenging</i> datasets.
+      
+          <p align="center">
+            <a><img src="figure/lenet5/conv105_lr2_scatterplot3.svg" width="200" ></a>
+            <a><img src="figure/km-mnist/fmnist_conv105_lr2_scatterplot3.svg" width="200" ></a>
+            <a><img src="figure/km-mnist/kmnist_conv105_lr2_scatterplot3.svg" width="200" ></a>
+          </p>
+
+          <h2 class="title is-3" align='center'>Correlation Results with LeNet5-Mini variants</h2>
+          Pruned train loss <i>vs.</i> final test accuracy on MNIST with different variants of LeNet5-Mini (pruning ratio 0.5, Conv1 layer). The original LeNet5-Mini (Base) has 5 layers (D5) and each layer has 10 neurons (W10). Here we change the model width and depth to obtain different variants. As seen, the correlation becomes <i>weaker</i> when pruning <i>more complex</i> networks.
+
+          <p align="center">
+            <a><img src="figure/lenet5/conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/d6_conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/d7_conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/d8_conv105_lr2_scatterplot3.svg" width="150" ></a>
+            </br>
+            <a><img src="figure/lenet5/conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/w20_conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/w30_conv105_lr2_scatterplot3.svg" width="150" ></a>
+            <a><img src="figure/diff/w40_conv105_lr2_scatterplot3.svg" width="150" ></a>
+          </p>    
+
+          <h2 class="title is-3" align='center'>Correlation Results about Lesson</h2>
+          
+          <center>Test accuracy (10% epochs) <i>vs.</i> test accuracy (100% epochs). </center>
+
+          <p align="center">
+            <a><img src="figure/direction/conv105_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/conv205_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/conv305_lr2_acc.svg" width="200" ></a>
+            </br>
+            <a><img src="figure/direction/conv10.520.5_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/conv10.530.5_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/conv20.530.5_lr2_acc.svg" width="200" ></a>
+            </br>
+            <a><img src="figure/direction/conv1230.5_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/resnet56_conv10.5_lr2_acc.svg" width="200" ></a>
+            <a><img src="figure/direction/resnet18_conv10.5_lr2_acc.svg" width="200" ></a>
+          </p>    
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{,
+    title={},
+    author={},
+    journal={arXiv preprint arXiv:},
+    year={2025},
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
