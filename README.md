@@ -12,13 +12,13 @@
 ![](https://img.shields.io/github/forks/fscdc/ReasonMap?color=lightblue)
 ![](https://img.shields.io/github/last-commit/fscdc/Awesome-Efficient-Reasoning-Models?color=green)
 ![](https://img.shields.io/badge/PRs-Welcome-blue)
-<a href="" target="_blank"><img src="https://img.shields.io/badge/arXiv-Coming%20Soon-green" alt="arXiv coming soon"></a>
+<a href="https://arxiv.org/abs/2505.18675" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.18675-009688.svg" alt="arXiv"></a>
 
 </div>
 
 <div align="center">
 
-**[<a href="">arXiv</a>]** **[<a href="https://huggingface.co/datasets/FSCCS/ReasonMap">Dataset</a>]** **[<a href="">X</a>]**
+**[<a href="https://arxiv.org/abs/2505.18675">arXiv</a>]** **[<a href="https://huggingface.co/datasets/FSCCS/ReasonMap">Dataset</a>]** **[<a href="https://x.com/si_feng32704/status/1927186378900533309">X</a>]**
 
 </div>
 
@@ -42,16 +42,38 @@
 
 ## Usage
 
+### 1. Install dependencies
 
+If you face any issues with the installation, please feel free to open an issue. We will try our best to help you.
+
+```bash
+conda env create -f reasonmap-py310.yaml
+```
+
+### 2. Download the dataset
+You can download the dataset from [HuggingFace](https://huggingface.co/datasets/FSCCS/ReasonMap).
+
+
+### 3. Evaluation
+You can evaluate the model performance on ReasonMap by running the following command:
+```bash
+# open-source models
+bash script/run.sh
+# closed-source models
+bash script/run-closed-models.sh
+
+# after running the above scripts, you can analyze the results by:
+python cal_metrics.py
+```
 
 ## Citation
 If you find this survey useful in your research, please consider citing our paper:
 
 ```bibtex
-@article{,
-  title={},
-  author={},
-  journal={arXiv preprint arXiv:},
+@article{feng2025efficient,
+  title={Efficient reasoning models: A survey},
+  author={Feng, Sicheng and Fang, Gongfan and Ma, Xinyin and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2504.10903},
   year={2025}
 }
 ```

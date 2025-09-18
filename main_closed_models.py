@@ -46,11 +46,11 @@ for i_sample, sample in enumerate(tqdm(dataset, desc="Evaluating samples")):
     country = sample["country"]
     city = sample["city"]
 
-    metadata = sample["json"]
-    # save to ./station/{country}/{city}.json
-    os.makedirs(f"./stations/{country}", exist_ok=True)
-    with open(f"./stations/{country}/{city}.json", "w", encoding="utf-8") as f:
-        json.dump(metadata, f, ensure_ascii=False, indent=4)
+    # metadata = sample["json"]
+    # # save to ./station/{country}/{city}.json
+    # os.makedirs(f"./stations/{country}", exist_ok=True)
+    # with open(f"./stations/{country}/{city}.json", "w", encoding="utf-8") as f:
+    #     json.dump(metadata, f, ensure_ascii=False, indent=4)
 
     # continue inference
     model_shortname = args.model
