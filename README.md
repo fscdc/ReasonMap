@@ -70,10 +70,10 @@ python cal_metrics.py
 If you find this survey useful in your research, please consider citing our paper:
 
 ```bibtex
-@article{feng2025efficient,
-  title={Efficient reasoning models: A survey},
-  author={Feng, Sicheng and Fang, Gongfan and Ma, Xinyin and Wang, Xinchao},
-  journal={arXiv preprint arXiv:2504.10903},
+@article{feng2025can,
+  title={Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps},
+  author={Feng, Sicheng and Wang, Song and Ouyang, Shuyi and Kong, Lingdong and Song, Zikai and Zhu, Jianke and Wang, Huan and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2505.18675},
   year={2025}
 }
 ```
