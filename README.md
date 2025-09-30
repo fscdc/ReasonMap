@@ -10,7 +10,7 @@
 
 ![](https://img.shields.io/github/stars/fscdc/ReasonMap?color=yellow)
 ![](https://img.shields.io/github/forks/fscdc/ReasonMap?color=lightblue)
-![](https://img.shields.io/github/last-commit/fscdc/Awesome-Efficient-Reasoning-Models?color=green)
+![](https://img.shields.io/github/last-commit/fscdc/ReasonMap?color=green)
 ![](https://img.shields.io/badge/PRs-Welcome-blue)
 <a href="https://arxiv.org/abs/2505.18675" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.18675-009688.svg" alt="arXiv"></a>
 
@@ -67,7 +67,7 @@ python cal_metrics.py
 ```
 
 ## Citation
-If you find this survey useful in your research, please consider citing our paper:
+If you find this benchmark useful in your research, please consider citing our paper:
 
 ```bibtex
 @article{feng2025can,
