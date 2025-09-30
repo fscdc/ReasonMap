@@ -30,7 +30,7 @@
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our [research](#citation)!
 
 <p align="center">
-<img src="assets/overview.svg" width = "95%" alt="" align=center />
+<img src="assets/overview.png" width = "95%" alt="" align=center />
 </p>
 
 
