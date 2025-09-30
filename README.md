@@ -18,7 +18,7 @@
 
 <div align="center">
 
-**[<a href="https://arxiv.org/abs/2505.18675">arXiv</a>]** **[<a href="https://huggingface.co/datasets/FSCCS/ReasonMap">Dataset</a>]** **[<a href="https://x.com/si_feng32704/status/1927186378900533309">X</a>]**
+**[<a href="https://arxiv.org/abs/2505.18675">arXiv</a>]** **[<a href="https://huggingface.co/collections/FSCCS/reasonmap-688517b57d771707a5d64656">Dataset</a>]** **[<a href="https://x.com/si_feng32704/status/1927186378900533309">X</a>]**
 
 </div>
 
@@ -36,6 +36,7 @@
 
 ## Updates
 
+- 2025-09-30: 🚀 We released [ReasonMap-Plus](https://huggingface.co/datasets/FSCCS/ReasonMap-Plus) for the following research, the arxiv is coming!
 - 2025-05-15: 🚀 We released evaluation code and our [website](https://fscdc.github.io/ReasonMap/) online!
 - 2025-05-15: 🚀 We released [ReasonMap](https://huggingface.co/datasets/FSCCS/ReasonMap)!
 
@@ -51,16 +52,20 @@ conda env create -f reasonmap-py310.yaml
 ```
 
 ### 2. Download the dataset
-You can download the dataset from [HuggingFace](https://huggingface.co/datasets/FSCCS/ReasonMap).
+You can download [ReasonMap](https://huggingface.co/datasets/FSCCS/ReasonMap) and [ReasonMap-Plus](https://huggingface.co/datasets/FSCCS/ReasonMap-Plus) from HuggingFace.
 
 
 ### 3. Evaluation
 You can evaluate the model performance on ReasonMap by running the following command:
 ```bash
+## ReasonMap Evaluation
 # open-source models
 bash script/run.sh
 # closed-source models
 bash script/run-closed-models.sh
+
+## ReasonMap-Plus Evaluation
+bash script/run_plus.sh
 
 # after running the above scripts, you can analyze the results by:
 python cal_metrics.py

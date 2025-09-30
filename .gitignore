@@ -9,7 +9,7 @@ rad.json
 *.flf
 TestResults.xml
 cache
-maps
+# maps
 __pycache__
 *.pyc
 results
