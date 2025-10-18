@@ -18,7 +18,7 @@
 
 <div align="center">
 
-**[<a href="https://arxiv.org/abs/2505.18675">arXiv</a>]** **[<a href="https://huggingface.co/collections/FSCCS/reasonmap-688517b57d771707a5d64656">Dataset</a>]** **[<a href="https://x.com/si_feng32704/status/1927186378900533309">X</a>]**
+**[<a href="https://arxiv.org/abs/2505.18675">arXiv</a>]** **[<a href="https://huggingface.co/collections/FSCCS/reasonmap-688517b57d771707a5d64656">Dataset</a>]** **[<a href="https://x.com/si_feng32704/status/1927186378900533309">Twitter</a>]** **[<a href="https://mp.weixin.qq.com/s/sPJLQtHgl5DZghWLWa_H3Q">量子位</a>]**
 
 </div>
 
