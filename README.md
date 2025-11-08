@@ -24,6 +24,15 @@
 
 </div>
 
+---
+
+<div align="center">
+
+💡 Interested in evaluating your model on ReasonMap or ReasonMap-Plus?
+ 
+📩 Contact us [fscnkucs@gmail.com](fscnkucs@gmail.com)
+
+</div>
 
 ---
 >
