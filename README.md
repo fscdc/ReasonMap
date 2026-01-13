@@ -1,8 +1,7 @@
 <div align="center">
 
   <h2><b> Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps </b></h2>
-  <h4> A Fine-Grained Visual Reasoning Benchmark: ReasonMap </h4>
-  <h4> The first benchmark using real-world metro maps </h4>
+  <h4> A Fine-Grained Visual Reasoning Benchmark & The first benchmark using real-world metro maps: ReasonMap </h4>
 
 </div>
 
