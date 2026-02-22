@@ -1,7 +1,7 @@
 <div align="center">
 
-  <h2><b> [CVPR 2026] Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps </b></h2>
-  <h4> A Fine-Grained Visual Reasoning Benchmark & The first benchmark using real-world metro maps: ReasonMap </h4>
+  <h2><b> [CVPR 2026] ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps </b></h2>
+  <h4> The first benchmark using real-world metro maps </h4>
 
 </div>
 
@@ -24,7 +24,17 @@
 
 </div>
 
----
+This repository is for our paper:
+> **[ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps](https://arxiv.org/abs/2505.18675)** \
+> [Sicheng Feng](https://fscdc.github.io/)<sup>1,2,^</sup>, [Song Wang](https://songw-zju.github.io/)<sup>3,2,^</sup>, [Shuyi Ouyang](https://scholar.google.com/citations?user=pQgChLEAAAAJ&hl=zh-CN)<sup>3,2</sup>, [Lingdong Kong](https://ldkong.com/)<sup>2</sup>, [Zikai Song](https://skyesong38.github.io/)<sup>4,2</sup>, [Jianke Zhu](https://person.zju.edu.cn/en/jkzhu)<sup>3</sup>, [Huan Wang](https://huanwang.tech/)<sup>1,*</sup>, [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/)<sup>2</sup> \
+> <sup>1</sup>Westlake University, Hangzhou, China \
+> <sup>2</sup>National University of Singapore, Singapore \
+> <sup>3</sup>Zhejiang University, Hangzhou, China \
+> <sup>4</sup>Huazhong University of Science and Technology, Wuhan, China \
+> <sup>^</sup>Equal contribution, <sup>∗</sup>Corresponding author: wanghuan@westlake.edu.cn
+
+
+<!-- ---
 
 <div align="center">
 
@@ -32,7 +42,7 @@
  
 📩 Contact us [fscnkucs@gmail.com](fscnkucs@gmail.com)
 
-</div>
+</div> -->
 
 ---
 >
