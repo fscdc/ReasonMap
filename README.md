@@ -57,7 +57,7 @@ This repository is for our paper:
 
 ## Updates
 
-- 2026-02-21: 🚀 This paper is accepted by CVPR 2026!
+- 2026-02-21: 🚀 Our paper was accepted by CVPR 2026! Thanks to all contributors!
 - 2026-01-26: 🚀 The following research ([RewardMap](https://github.com/fscdc/RewardMap)) has been accepted by ICLR 2026!
 - 2025-09-30: 🚀 We released [ReasonMap-Plus](https://huggingface.co/datasets/FSCCS/ReasonMap-Plus) for the following research - [RewardMap](https://github.com/fscdc/RewardMap)!
 - 2025-05-15: 🚀 We released evaluation code and our [website](https://fscdc.github.io/ReasonMap/) online!
