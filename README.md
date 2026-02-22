@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h2><b> Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps </b></h2>
+  <h2><b> [CVPR 2026] Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps </b></h2>
   <h4> A Fine-Grained Visual Reasoning Benchmark & The first benchmark using real-world metro maps: ReasonMap </h4>
 
 </div>
@@ -47,6 +47,7 @@
 
 ## Updates
 
+- 2026-02-21: 🚀 This paper is accepted by CVPR 2026!
 - 2026-01-26: 🚀 The following research ([RewardMap](https://github.com/fscdc/RewardMap)) has been accepted by ICLR 2026!
 - 2025-09-30: 🚀 We released [ReasonMap-Plus](https://huggingface.co/datasets/FSCCS/ReasonMap-Plus) for the following research - [RewardMap](https://github.com/fscdc/RewardMap)!
 - 2025-05-15: 🚀 We released evaluation code and our [website](https://fscdc.github.io/ReasonMap/) online!
