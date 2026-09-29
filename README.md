@@ -98,7 +98,7 @@ python cal_metrics.py
 If you find this benchmark useful in your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{feng2025can,
+@inproceedings{feng2026reasonmap,
   title={ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps},
   author={Feng, Sicheng and Wang, Song and Ouyang, Shuyi and Kong, Lingdong and Song, Zikai and Zhu, Jianke and Wang, Huan and Wang, Xinchao},
   booktitle={CVPR},
@@ -106,7 +106,7 @@ If you find this benchmark useful in your research, please consider citing our p
 }
 
 # further research
-@inproceedings{feng2025rewardmap,
+@inproceedings{feng2026rewardmap,
   title={RewardMap: Tackling Sparse Rewards in Fine-grained Visual Reasoning via Multi-Stage Reinforcement Learning},
   author={Feng, Sicheng and Tuo, Kaiwen and Wang, Song and Kong, Lingdong and Zhu, Jianke and Wang, Huan},
   booktitle={ICLR},
