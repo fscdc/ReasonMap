@@ -98,18 +98,18 @@ python cal_metrics.py
 If you find this benchmark useful in your research, please consider citing our paper:
 
 ```bibtex
-@article{feng2025can,
-  title={Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps},
+@inproceedings{feng2025can,
+  title={ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps},
   author={Feng, Sicheng and Wang, Song and Ouyang, Shuyi and Kong, Lingdong and Song, Zikai and Zhu, Jianke and Wang, Huan and Wang, Xinchao},
-  journal={arXiv preprint arXiv:2505.18675},
-  year={2025}
+  booktitle={CVPR},
+  year={2026}
 }
 
 # further research
-@article{feng2025rewardmap,
+@inproceedings{feng2025rewardmap,
   title={RewardMap: Tackling Sparse Rewards in Fine-grained Visual Reasoning via Multi-Stage Reinforcement Learning},
   author={Feng, Sicheng and Tuo, Kaiwen and Wang, Song and Kong, Lingdong and Zhu, Jianke and Wang, Huan},
-  journal={arXiv preprint arXiv:2510.02240},
-  year={2025}
+  booktitle={ICLR},
+  year={2026}
 }
 ```
