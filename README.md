@@ -57,6 +57,7 @@ This repository is for our paper:
 
 ## Updates
 
+- 2026-11-24: 🚀 Major update to the evaluation code, built for fast evaluation in the AutoResearch era! Inference and scoring are now separate, and inference runs on [vLLM](#32-vllm) / [SGLang](#33-sglang) servers as well as transformers and closed-model APIs. Scoring needs no GPU, and saved generations can be re-scored any time. See [Evaluation](#3-evaluation).
 - 2026-02-21: 🚀 Our paper was accepted by CVPR 2026! Thanks to all contributors!
 - 2026-01-26: 🚀 The following research ([RewardMap](https://github.com/fscdc/RewardMap)) has been accepted by ICLR 2026!
 - 2025-09-30: 🚀 We released [ReasonMap-Plus](https://huggingface.co/datasets/FSCCS/ReasonMap-Plus) for the following research - [RewardMap](https://github.com/fscdc/RewardMap)!
