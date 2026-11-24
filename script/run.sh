@@ -1,3 +1,7 @@
+#!/bin/bash
+# ReasonMap evaluation of open-source models with the transformers backend.
+# Set CACHE_DIR to reuse an existing HF cache for datasets / models.
+
 ####### Reasoning models ########
 # "Qwen/QVQ-72B-Preview"
 # "Skywork/Skywork-R1V-38B"
@@ -8,6 +12,7 @@
 # "Qwen/Qwen2.5-VL-3B-Instruct" "Qwen/Qwen2.5-VL-32B-Instruct" "Qwen/Qwen2.5-VL-72B-Instruct"
 # "OpenGVLab/InternVL3-78B" "OpenGVLab/InternVL3-38B"
 
+# A "-onlytext" suffix runs the text-only ablation (no map given to the model).
 model_list=(
   "Qwen/QVQ-72B-Preview"
   "Qwen/Qwen2.5-VL-3B-Instruct"
@@ -24,9 +29,11 @@ model_list=(
   "moonshotai/Kimi-VL-A3B-Thinking-onlytext"
 )
 
+mkdir -p logs
 for model in "${model_list[@]}"; do
     echo "Running model: $model"
-    log_name=${model//\//-}.txt
-    python main.py --model "$model" \
-        --cache_path "to-add-your-cache-dir" > ./logs/"$log_name"
+    tag=$(basename "$model")
+    python infer.py --task reasonmap --backend hf --model "$model" \
+        ${CACHE_DIR:+--cache-dir "$CACHE_DIR"} 2>&1 | tee "./logs/${model//\//-}.txt"
+    python score.py "outputs/reasonmap/${tag}.jsonl"
 done
