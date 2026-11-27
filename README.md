@@ -57,6 +57,7 @@ This repository is for our paper:
 
 ## Updates
 
+- 2026-11-27: 🚀 New results for Claude Opus 5.5 and GPT-6 Astra (medium reasoning effort) are on our [website](https://fscdc.github.io/ReasonMap/)! Their weighted accuracy (short / long) is 78.39% / 81.60% and 74.22% / 76.82%, well above the best model in the paper, OpenAI o3 (63.02% / 59.11%).
 - 2026-11-24: 🚀 Major update to the evaluation code, built for fast evaluation in the AutoResearch era! Inference and scoring are now separate, and inference runs on [vLLM](#32-vllm) / [SGLang](#33-sglang) servers as well as transformers and closed-model APIs. Scoring needs no GPU, and saved generations can be re-scored any time. See [Evaluation](#3-evaluation).
 - 2026-02-21: 🚀 Our paper was accepted by CVPR 2026! Thanks to all contributors!
 - 2026-01-26: 🚀 The following research ([RewardMap](https://github.com/fscdc/RewardMap)) has been accepted by ICLR 2026!
